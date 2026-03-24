@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хиральные подземелья</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #gameCanvas {
+            border: 2px solid #444;
+            background: #000;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+        #ui {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .panel {
+            background: #2a2a2a;
+            padding: 10px;
+            border: 1px solid #444;
+            min-width: 200px;
+        }
+        .status {
+            margin: 5px 0;
+        }
+        .compass {
+            font-size: 24px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Хиральные подземелья</h1>
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+        <canvas id="gameCanvas" width="240" height="240"></canvas>
+        <canvas id="minimapCanvas" width="100" height="100" style="border: 1px solid #444; image-rendering: pixelated;"></canvas>
+    </div>
+    <div id="ui">
+        <div class="panel">
+            <div class="compass" id="compass">N↑</div>
+            <div class="status">Этаж: <span id="floor">1</span></div>
+            <div class="status">Ориентация: <span id="orientation">+1</span></div>
+            <div class="status">Рука: <span id="hand">L</span></div>
+            <div class="status">ХП: <span id="hp">6</span></div>
+            <div class="status">Факелы: <span id="torches">4</span></div>
+            <div class="status">Инвентарь: <span id="inventory">Пусто</span></div>
+        </div>
+        <div class="panel">
+            <div>Управление:</div>
+            <div>WASD/Стрелки - движение</div>
+            <div>Пробел - ждать</div>
+            <div>F - стрелять</div>
+            <div>Q/E - руна поворота</div>
+            <div>Tab - сменить руку</div>
+            <div>T - использовать факел</div>
+            <div>Ctrl+S - сохранить</div>
+        </div>
+    </div>
+    <script type="module" src="dist/index.js"></script>
+</body>
+</html>
+

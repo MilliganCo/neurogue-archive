@@ -1,0 +1,19 @@
+{
+  "name": "neurogue",
+  "version": "0.1.0",
+  "description": "Хиральные подземелья - roguelike с неевклидовой геометрией",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "serve": "npx http-server . -p 8080 -c-1"
+  },
+  "keywords": ["roguelike", "game"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
+
