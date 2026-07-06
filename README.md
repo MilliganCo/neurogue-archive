@@ -1,56 +1,7 @@
-# Хиральные подземелья (NeuRogue)
+# Archived duplicate
 
-Roguelike на сетке 10×10 с неевклидовой геометрией.
+This repository duplicates `MilliganCo/neurogue`. The audited README has the same Git blob SHA as the canonical repository.
 
-## Установка
+Canonical project: https://github.com/MilliganCo/neurogue
 
-```bash
-npm install
-npm run build
-npm run serve
-```
-
-Откройте http://localhost:8080
-
-## Структура проекта
-
-```
-src/
-├── core/           # Основные системы
-│   ├── types.ts    # Типы и интерфейсы
-│   ├── geometry.ts # Геометрия с отражениями
-│   ├── fov.ts      # Поле зрения с лучами
-│   └── game.ts     # Игровой цикл
-├── map/            # Генерация и управление картой
-│   ├── generator.ts
-│   └── map.ts
-├── entities/       # Сущности (игрок, враги, предметы)
-│   ├── player.ts
-│   ├── enemies.ts
-│   └── items.ts
-├── systems/        # Системы ECS
-│   ├── combat.ts
-│   ├── doors.ts
-│   └── puzzles.ts
-├── render/         # Рендеринг
-│   └── renderer.ts
-└── index.ts        # Точка входа
-```
-
-## MVP Чеклист
-
-- [x] Настройка проекта
-- [ ] Базовые типы и интерфейсы
-- [ ] Модуль геометрии (step с отражениями)
-- [ ] Модуль FOV (лучи с отражениями)
-- [ ] Генерация карты
-- [ ] Система сущностей
-- [ ] Игровой цикл
-- [ ] Рендеринг
-- [ ] Хиральные двери и плиты
-- [ ] Боевая система
-- [ ] Враги MVP
-- [ ] Предметы MVP
-- [ ] UI
-- [ ] Сохранение/загрузка
-
+Do not publish or continue development here. Remove this repository after checking external links.
